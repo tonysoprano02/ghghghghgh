@@ -22,13 +22,13 @@ jobs:
           node-version: 16.x
 
       - name: cordova
-        run: npm install cordova@latest
+        run: npm install -g cordova@latest
 
       - name: Ionic
-        run: npm install ionic@latest
+        run: npm install -g ionic@latest
         
       - name: Angular
-        run: npm install angular@latest
+        run: npm install -g angular@latest
       
       - name: npm
         run: npm install
@@ -36,8 +36,8 @@ jobs:
 #       - name: typings
 #         run: npm install -g @ionic/app-scripts
         
-      - name: Remove Android platform
-        run: ionic cordova platform rm android
+#       - name: Remove Android platform
+#         run: ionic cordova platform rm android
         
       - name: Add Android platform
         run: ionic cordova platform add android@latest
